@@ -13,13 +13,12 @@ SCOPE = [
     ]
 
 
-
 def authenticate_google_sheets():
     """
-    Function that deals with authentication and access
-    to Google Sheets spreadsheet for the tasks, it includes
+    Function that deals with authentication, access and retieval
+    of Google Sheets spreadsheet for the tasks, it includes
     a try - except block that handles the issues if any in the
-    authentication process arise
+    authentication process arise and finally returns the retrieved spreadsheet.
     """
     try:
         CREDS = Credentials.from_service_account_file('creds.json')
