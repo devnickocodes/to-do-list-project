@@ -25,18 +25,34 @@ def authenticate_google_sheets():
         SCOPED_CREDS = CREDS.with_scopes(SCOPE)
         GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
         SHEET = GSPREAD_CLIENT.open('to-do-list-app')
-        tasks = SHEET.get_worksheet(0) 
-        worksheet = tasks.get_all_values()
+        worksheet = SHEET.get_worksheet(0) 
         return worksheet
     except Exception as e:
         print(f"Error: {e}")
         return None
 
 
+def view_tasks(worksheet):
+    """
+    Function that checks for available tasks with an if statement
+    and using a for loop it displays all the available tasks 
+    in the specified format by the f-string
+    """
+    # Get all values in the worksheet
+    values = worksheet.get_all_values()
+
+    if len(values) <= 0:
+        print("No tasks available.")
+    else:
+        print("\nTasks:\n")
+        for i, row in enumerate(values, 1):
+            print(f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}")
+
+
 def validate():
 
     worksheet = authenticate_google_sheets()
-    print(worksheet)
-
+    view_tasks(worksheet)
+    
 
 validate()
