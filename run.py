@@ -6,3 +6,19 @@ from google.oauth2.service_account import Credentials
 from datetime import datetime
 from colorama import Fore, Style
 
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('to-do-list-app')
+
+tasks = SHEET.worksheet('tasks')
+
+data = tasks.get_all_values()
+
+print(data)
