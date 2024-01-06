@@ -78,10 +78,17 @@ def display_menu():
 
 def main():
     worksheet = authenticate_google_sheets()
-    display_menu()
-    view_tasks(worksheet)
-    add_task(worksheet)
-    view_tasks(worksheet)
+
+    print(bool(worksheet))
+
+    if worksheet:
+        print("hello")
+    
+            
+    # display_menu()
+    # view_tasks(worksheet)
+    # add_task(worksheet)
+    # view_tasks(worksheet)
 
 
 main()
