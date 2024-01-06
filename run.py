@@ -81,7 +81,10 @@ def remove_task(worksheet):
     # Prompt the user to choose a task
     choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL))
 
+    if 1 <= choice <= len(values):
+        print(values)
 
+        
 def display_menu():
     """
     Function that displays the menu with the available
