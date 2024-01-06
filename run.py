@@ -88,12 +88,11 @@ def main():
             
             if choice == '1':
                 add_task(worksheet)
-                break
-            else:
+            elif choice == '2':
+                view_tasks(worksheet)
                 break
 
 
-    # view_tasks(worksheet)
 
 
 main()
