@@ -49,8 +49,21 @@ def view_tasks(worksheet):
             print(f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}")
 
 
-def validate():
+def display_menu():
+    """
+    Function that displays the menu with the available options for the To-Do List to the user
+    """
+    print("\n===== To-Do List App =====")
+    print("1. Add Task")
+    print("2. Remove Task")
+    print("3. View Tasks")
+    print("4. Mark Task as Done")
+    print("5. Quit")
+    print("=========================")
 
+
+def validate():
+    display_menu()
     worksheet = authenticate_google_sheets()
     view_tasks(worksheet)
     
