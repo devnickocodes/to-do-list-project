@@ -84,7 +84,7 @@ def remove_task(worksheet):
     if 1 <= choice <= len(values):
         task_to_remove = values[choice - 1][0]  # Adjust for 0-based indexing
         worksheet.delete_rows(choice)
-        print(task_to_remove)
+        print(f'Task "{task_to_remove}" removed from Google Spreadsheet.')
 
 
 def display_menu():
