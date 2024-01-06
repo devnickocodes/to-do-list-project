@@ -70,7 +70,7 @@ def remove_task(worksheet):
     view_tasks(worksheet)
 
     # Prompt the user to choose a task
-    choice = int(input("Enter the number of the task to remove: "))
+    choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL))
 
 def display_menu():
     """
@@ -102,8 +102,6 @@ def main():
     #             view_tasks(worksheet)
     #             break
 
-
     remove_task(worksheet)
-
 
 main()
