@@ -55,7 +55,6 @@ def add_task(worksheet):
     print(Fore.GREEN + Style.BRIGHT + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
 
 
-
 def view_tasks(worksheet):
     """
     Function that checks for available tasks with an if statement
@@ -81,6 +80,7 @@ def remove_task(worksheet):
 
     # Prompt the user to choose a task
     choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL))
+
 
 def display_menu():
     """
@@ -110,6 +110,10 @@ def main():
                 add_task(worksheet)
             elif choice == '2':
                 view_tasks(worksheet)
+                break
+            elif choice == '3':
+                remove_task(worksheet)
+            elif choice == '4':
                 break
 
 
