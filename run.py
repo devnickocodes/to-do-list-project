@@ -73,6 +73,12 @@ def view_tasks(worksheet):
 
 
 def remove_task(worksheet):
+    """
+    Function that checks for any existing tasks, displays them,
+    takes a user input and if a task exists with the corresponding
+    number it is removed, the function contains a try/except block
+    which is used to catch any errors
+    """
     try:
         # Get all values in the worksheet
         values = worksheet.get_all_values()
