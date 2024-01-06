@@ -114,7 +114,6 @@ def main():
                 add_task(worksheet)
             elif choice == '2':
                 view_tasks(worksheet)
-                break
             elif choice == '3':
                 remove_task(worksheet)
             elif choice == '4':
