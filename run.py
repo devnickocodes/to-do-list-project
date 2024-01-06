@@ -39,7 +39,7 @@ def add_task(worksheet):
     task, an initial status of 'Not Done' and the timestamp to
     the Google Spreadsheet
     """
-    task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task: " + Style.RESET_ALL)
+    task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task:\n" + Style.RESET_ALL)
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     # Append task data to the Google Spreadsheet
     worksheet.append_row([task, 'Not Done', timestamp])
@@ -82,14 +82,13 @@ def main():
     if worksheet:
         while True:
             display_menu()
-            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice: " + Style.RESET_ALL)
+            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
             
             if choice == '1':
                 add_task(worksheet)
             elif choice == '2':
                 view_tasks(worksheet)
                 break
-
 
 
 main()
