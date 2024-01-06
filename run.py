@@ -44,9 +44,9 @@ def view_tasks(worksheet):
     if len(values) <= 0:
         print("No tasks available.")
     else:
-        print("\nTasks:\n")
+        print(Fore.MAGENTA + Style.BRIGHT + "\nTasks:\n" + Style.RESET_ALL)
         for i, row in enumerate(values, 1):
-            print(f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}")
+            print(Fore.MAGENTA + Style.BRIGHT + f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}" + Style.RESET_ALL)
 
 
 def display_menu():
