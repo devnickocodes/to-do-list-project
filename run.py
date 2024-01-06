@@ -76,6 +76,10 @@ def remove_task(worksheet):
     # Get all values in the worksheet
     values = worksheet.get_all_values()
 
+    if len(values) <= 1:
+        print("No tasks available.")
+        return
+
     view_tasks(worksheet)
 
     # Prompt the user to choose a task
