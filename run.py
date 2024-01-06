@@ -63,6 +63,12 @@ def view_tasks(worksheet):
             print(Fore.MAGENTA + Style.BRIGHT + f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}" + Style.RESET_ALL)
 
 
+def remove_task(worksheet):
+    # Get all values in the worksheet
+    values = worksheet.get_all_values()
+    print(values)
+
+
 def display_menu():
     """
     Function that displays the menu with the available
@@ -82,16 +88,19 @@ def display_menu():
 def main():
     worksheet = authenticate_google_sheets()
 
-    if worksheet:
-        while True:
-            display_menu()
-            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
+    # if worksheet:
+    #     while True:
+    #         display_menu()
+    #         choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
             
-            if choice == '1':
-                add_task(worksheet)
-            elif choice == '2':
-                view_tasks(worksheet)
-                break
+    #         if choice == '1':
+    #             add_task(worksheet)
+    #         elif choice == '2':
+    #             view_tasks(worksheet)
+    #             break
+
+
+    remove_task(worksheet)
 
 
 main()
