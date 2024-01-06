@@ -18,7 +18,7 @@ def authenticate_google_sheets():
     Function that deals with authentication, access and retieval
     of Google Sheets spreadsheet for the tasks, it includes
     a try - except block that handles the issues if any in the
-    authentication process arise and finally returns the retrieved spreadsheet.
+    authentication process arise and finally returns the retrieved spreadsheet
     """
     try:
         CREDS = Credentials.from_service_account_file('creds.json')
@@ -49,7 +49,7 @@ def add_task(worksheet):
 def view_tasks(worksheet):
     """
     Function that checks for available tasks with an if statement
-    and using a for loop it displays all the available tasks 
+    and using a for loop it displays all the available tasks
     in the specified format by the f-string
     """
     # Get all values in the worksheet
@@ -65,15 +65,18 @@ def view_tasks(worksheet):
 
 def display_menu():
     """
-    Function that displays the menu with the available options for the To-Do List to the user
+    Function that displays the menu with the available
+    options for the To-Do List to the user
     """
-    print(Fore.CYAN + Style.BRIGHT + "\n===== To-Do List App =====")
+    print(Fore.CYAN + Style.BRIGHT)
+    print("\n===== To-Do List App =====")
     print("1. Add Task")
     print("2. View Tasks")
     print("3. Remove Task")
     print("4. Mark Task as Done")
     print("5. Quit")
-    print("=========================" + Style.RESET_ALL)
+    print("=========================")
+    print(Style.RESET_ALL)
 
 
 def main():
