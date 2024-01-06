@@ -82,9 +82,10 @@ def remove_task(worksheet):
     choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL))
 
     if 1 <= choice <= len(values):
-        print(values)
+        task_to_remove = values[choice - 1][0]  # Adjust for 0-based indexing
+        print(task_to_remove)
 
-        
+
 def display_menu():
     """
     Function that displays the menu with the available
