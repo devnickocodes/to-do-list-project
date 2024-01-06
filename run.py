@@ -66,8 +66,11 @@ def view_tasks(worksheet):
 def remove_task(worksheet):
     # Get all values in the worksheet
     values = worksheet.get_all_values()
-    print(values)
+    
+    view_tasks(worksheet)
 
+    # Prompt the user to choose a task
+    choice = int(input("Enter the number of the task to remove: "))
 
 def display_menu():
     """
