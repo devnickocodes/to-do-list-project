@@ -32,6 +32,22 @@ def authenticate_google_sheets():
         return None
 
 
+def add_task(worksheet):
+    """
+    Function takes a user input and assigns it to a variable task,
+    assigns a timestamp to a variable timestamp and appends the
+    task, an initial status of 'Not Done' and the timestamp to
+    the Google Spreadsheet
+    """
+    task = input("Enter the task: ")
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    
+    # Append task data to the Google Spreadsheet
+    worksheet.append_row([task, 'Not Done', timestamp])
+    
+    print(f'Task "{task}" added to Google Spreadsheet.')
+
+
 def view_tasks(worksheet):
     """
     Function that checks for available tasks with an if statement
@@ -65,7 +81,8 @@ def display_menu():
 def validate():
     display_menu()
     worksheet = authenticate_google_sheets()
+    add_task(worksheet)
     view_tasks(worksheet)
-    
+
 
 validate()
