@@ -25,7 +25,7 @@ def authenticate_google_sheets():
         SCOPED_CREDS = CREDS.with_scopes(SCOPE)
         GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
         SHEET = GSPREAD_CLIENT.open('to-do-list-app')
-        worksheet = SHEET.get_worksheet(0) 
+        worksheet = SHEET.get_worksheet(0)
         return worksheet
     except Exception as e:
         print(f"Error: {e}")
@@ -69,8 +69,8 @@ def display_menu():
     """
     print(Fore.CYAN + Style.BRIGHT + "\n===== To-Do List App =====")
     print("1. Add Task")
-    print("2. Remove Task")
-    print("3. View Tasks")
+    print("2. View Tasks")
+    print("3. Remove Task")
     print("4. Mark Task as Done")
     print("5. Quit")
     print("=========================" + Style.RESET_ALL)
