@@ -34,16 +34,26 @@ def authenticate_google_sheets():
 
 def add_task(worksheet):
     """
-    Function takes a user input and assigns it to a variable task,
-    assigns a timestamp to a variable timestamp and appends the
-    task, an initial status of 'Not Done' and the timestamp to
-    the Google Spreadsheet
+    Function takes a user input, checks for non-empty input,
+    assigns it to a variable task, assigns a timestamp to a
+    variable timestamp, and appends the task, an initial status
+    of 'Not Done', and the timestamp to the Google Spreadsheet.
+    The function uses a while loop to check if the task the user has entered 
+    is empty
     """
-    task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task:\n" + Style.RESET_ALL)
+    while True:
+        task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task:\n" + Style.RESET_ALL)
+        if task.strip():  # Check if the input is non-empty after removing leading/trailing whitespaces
+            break
+        else:
+            print(Fore.RED + Style.BRIGHT + "Task cannot be empty. Please try again." + Style.RESET_ALL)
+            return
+
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     # Append task data to the Google Spreadsheet
     worksheet.append_row([task, 'Not Done', timestamp])
     print(Fore.GREEN + Style.BRIGHT + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
+
 
 
 def view_tasks(worksheet):
@@ -91,17 +101,16 @@ def display_menu():
 def main():
     worksheet = authenticate_google_sheets()
 
-    # if worksheet:
-    #     while True:
-    #         display_menu()
-    #         choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
+    if worksheet:
+        while True:
+            display_menu()
+            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
             
-    #         if choice == '1':
-    #             add_task(worksheet)
-    #         elif choice == '2':
-    #             view_tasks(worksheet)
-    #             break
+            if choice == '1':
+                add_task(worksheet)
+            elif choice == '2':
+                view_tasks(worksheet)
+                break
 
-    remove_task(worksheet)
 
 main()
