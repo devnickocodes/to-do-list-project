@@ -79,8 +79,6 @@ def display_menu():
 def main():
     worksheet = authenticate_google_sheets()
 
-    print(bool(worksheet))
-
     if worksheet:
         while True:
             display_menu()
@@ -91,7 +89,6 @@ def main():
             elif choice == '2':
                 view_tasks(worksheet)
                 break
-
 
 
 
