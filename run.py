@@ -84,8 +84,9 @@ def main():
     if worksheet:
         while True:
             display_menu()
+            choice = input("Enter your choice: ")
+            print(choice)
             break
-    
             
 
     # view_tasks(worksheet)
