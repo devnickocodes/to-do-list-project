@@ -4,7 +4,7 @@ Imports
 import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
-from colorama import Fore, Style
+from colorama import Fore, Style, Back
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -58,9 +58,9 @@ def view_tasks(worksheet):
     if len(values) <= 0:
         print(Fore.RED + Style.BRIGHT + "No tasks available." + Style.RESET_ALL)
     else:
-        print(Fore.MAGENTA + Style.BRIGHT + "\nTasks:\n" + Style.RESET_ALL)
+        print(Back.WHITE + Fore.MAGENTA + Style.BRIGHT + "\nTasks:\n" + Style.RESET_ALL)
         for i, row in enumerate(values, 1):
-            print(Fore.MAGENTA + Style.BRIGHT + f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}" + Style.RESET_ALL)
+            print(Back.WHITE + Fore.MAGENTA + Style.BRIGHT + f"{i}. {row[0]} - Status: {row[1]}, Timestamp: {row[2]}" + Style.RESET_ALL)
 
 
 def display_menu():
