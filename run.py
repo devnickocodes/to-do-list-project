@@ -73,25 +73,28 @@ def view_tasks(worksheet):
 
 
 def remove_task(worksheet):
-    # Get all values in the worksheet
-    values = worksheet.get_all_values()
+    try:
+        # Get all values in the worksheet
+        values = worksheet.get_all_values()
 
-    if len(values) <= 1:
-        print("No tasks available.")
-        return
+        if len(values) <= 1:
+            print("No tasks available.")
+            return
 
-    view_tasks(worksheet)
+        view_tasks(worksheet)
 
-    # Prompt the user to choose a task
-    choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL))
+        # Prompt the user to choose a task
+        choice = input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to remove:\n" + Style.RESET_ALL)
 
-    # Remove the chosen task
-    if 1 <= choice <= len(values):
-        task_to_remove = values[choice - 1][0]  # Adjust for 0-based indexing
-        worksheet.delete_rows(choice)
-        print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_remove}" removed from Google Spreadsheet.' + Style.RESET_ALL)
-    else:
-        print("Invalid choice. Please enter a valid number.")
+        # Remove the chosen task
+        if 1 <= choice <= len(values):
+            task_to_remove = values[choice - 1][0]  # Adjust for 0-based indexing
+            worksheet.delete_rows(choice)
+            print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_remove}" removed from Google Spreadsheet.' + Style.RESET_ALL)
+        else:
+            print("Invalid choice. Please enter a valid number.")
+    except Exception as e:
+        print(f"Error: {e}")
 
 
 def display_menu():
