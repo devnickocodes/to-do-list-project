@@ -39,13 +39,11 @@ def add_task(worksheet):
     task, an initial status of 'Not Done' and the timestamp to
     the Google Spreadsheet
     """
-    task = input("Enter the task: ")
+    task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task: " + Style.RESET_ALL)
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    
     # Append task data to the Google Spreadsheet
     worksheet.append_row([task, 'Not Done', timestamp])
-    
-    print(f'Task "{task}" added to Google Spreadsheet.')
+    print(Fore.GREEN + Style.BRIGHT + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
 
 
 def view_tasks(worksheet):
@@ -79,8 +77,9 @@ def display_menu():
 
 
 def validate():
-    display_menu()
     worksheet = authenticate_google_sheets()
+    display_menu()
+    view_tasks(worksheet)
     add_task(worksheet)
     view_tasks(worksheet)
 
