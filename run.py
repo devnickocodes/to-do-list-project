@@ -82,10 +82,12 @@ def main():
     print(bool(worksheet))
 
     if worksheet:
-        print("hello")
+        while True:
+            display_menu()
+            break
     
             
-    # display_menu()
+
     # view_tasks(worksheet)
     # add_task(worksheet)
     # view_tasks(worksheet)
