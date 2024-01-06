@@ -53,13 +53,13 @@ def display_menu():
     """
     Function that displays the menu with the available options for the To-Do List to the user
     """
-    print("\n===== To-Do List App =====")
+    print(Fore.CYAN + Style.BRIGHT + "\n===== To-Do List App =====")
     print("1. Add Task")
     print("2. Remove Task")
     print("3. View Tasks")
     print("4. Mark Task as Done")
     print("5. Quit")
-    print("=========================")
+    print("=========================" + Style.RESET_ALL)
 
 
 def validate():
