@@ -84,7 +84,7 @@ def main():
     if worksheet:
         while True:
             display_menu()
-            choice = input("Enter your choice: ")
+            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice: " + Style.RESET_ALL)
             
             if choice == '1':
                 add_task(worksheet)
@@ -92,8 +92,7 @@ def main():
             else:
                 break
 
-    # view_tasks(worksheet)
-    # add_task(worksheet)
+
     # view_tasks(worksheet)
 
 
