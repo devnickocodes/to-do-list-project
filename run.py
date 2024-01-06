@@ -56,7 +56,7 @@ def view_tasks(worksheet):
     values = worksheet.get_all_values()
 
     if len(values) <= 0:
-        print("No tasks available.")
+        print(Fore.RED + Style.BRIGHT + "No tasks available." + Style.RESET_ALL)
     else:
         print(Fore.MAGENTA + Style.BRIGHT + "\nTasks:\n" + Style.RESET_ALL)
         for i, row in enumerate(values, 1):
@@ -76,7 +76,7 @@ def display_menu():
     print("=========================" + Style.RESET_ALL)
 
 
-def validate():
+def main():
     worksheet = authenticate_google_sheets()
     display_menu()
     view_tasks(worksheet)
@@ -84,4 +84,4 @@ def validate():
     view_tasks(worksheet)
 
 
-validate()
+main()
