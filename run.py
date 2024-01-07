@@ -6,6 +6,7 @@ from google.oauth2.service_account import Credentials
 from datetime import datetime
 from colorama import Fore, Style, Back
 
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -104,6 +105,13 @@ def remove_task(worksheet):
 
 
 def mark_task_as_done(worksheet):
+    """
+    Function that checks for any existing tasks, displays them,
+    takes a user input and if a task exists with the corresponding
+    number it is marked as done by updating the appropriate cell,
+    the function contains a try/except block which is
+    used to catch any errors
+    """
     try:
         # Get all values in the worksheet
         values = worksheet.get_all_values()
@@ -117,6 +125,7 @@ def mark_task_as_done(worksheet):
         # Prompt user to choose a task
         choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to mark as done: " + Style.RESET_ALL))
 
+        # Mark the chosen task as done
         if 1 <= choice <= len(values):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
             worksheet.update_cell(choice, 2, 'Done') 
