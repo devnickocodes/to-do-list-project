@@ -84,7 +84,7 @@ def remove_task(worksheet):
         values = worksheet.get_all_values()
 
         if len(values) <= 0:
-            print("No tasks available.")
+            print(Fore.RED + Style.BRIGHT + "No tasks available." + Style.RESET_ALL)
             return
 
         view_tasks(worksheet)
@@ -98,9 +98,9 @@ def remove_task(worksheet):
             worksheet.delete_rows(choice)
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_remove}" removed from Google Spreadsheet.' + Style.RESET_ALL)
         else:
-            print("Invalid choice. Please enter a valid number.")
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
     except Exception as e:
-        print(f"Error: {e}")
+        print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
 
 def mark_task_as_done(worksheet):
