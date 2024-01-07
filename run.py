@@ -104,6 +104,7 @@ def remove_task(worksheet):
 
 
 def mark_task_as_done(worksheet):
+    try:
         # Get all values in the worksheet
         values = worksheet.get_all_values()
 
@@ -123,6 +124,8 @@ def mark_task_as_done(worksheet):
             print(task_to_mark_as_done)
         else:
             print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
+    except Exception as e:
+        print(f"Error: {e}")
 
 def display_menu():
     """
