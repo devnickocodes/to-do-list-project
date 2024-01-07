@@ -140,24 +140,25 @@ def display_menu():
     print(Style.RESET_ALL)
 
 
-# def main():
-#     worksheet = authenticate_google_sheets()
+def main():
+    worksheet = authenticate_google_sheets()
 
-#     if worksheet:
-#         while True:
-#             display_menu()
-#             choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
+    if worksheet:
+        while True:
+            display_menu()
+            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
             
-#             if choice == '1':
-#                 add_task(worksheet)
-#             elif choice == '2':
-#                 view_tasks(worksheet)
-#             elif choice == '3':
-#                 remove_task(worksheet)
-#             elif choice == '4':
-#                 break
+            if choice == '1':
+                add_task(worksheet)
+            elif choice == '2':
+                view_tasks(worksheet)
+            elif choice == '3':
+                remove_task(worksheet)
+            elif choice == '4':
+                mark_task_as_done(worksheet)
+            elif choice == '5':
+                break
 
 
-# main()
-worksheet = authenticate_google_sheets()
-mark_task_as_done(worksheet)
+main()
+
