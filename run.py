@@ -147,7 +147,8 @@ def display_menu():
     print("2. View Tasks")
     print("3. Remove Task")
     print("4. Mark Task as Done")
-    print("5. Quit")
+    print("5. Mark Task as Not Done")
+    print("6. Quit")
     print("=========================")
     print(Style.RESET_ALL)
 
@@ -158,7 +159,7 @@ def main():
     if worksheet:
         while True:
             display_menu()
-            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice:\n" + Style.RESET_ALL)
+            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice (1-6):\n" + Style.RESET_ALL)
             
             if choice == '1':
                 add_task(worksheet)
