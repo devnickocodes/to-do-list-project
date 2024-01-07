@@ -130,6 +130,40 @@ def mark_task_as_done(worksheet):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
             worksheet.update_cell(choice, 2, 'Done') 
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.' + Style.RESET_ALL)
+
+        else:
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
+    except Exception as e:
+        print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
+
+
+def mark_task_as_not_done(worksheet):
+    """
+    Function that checks for any existing tasks, displays them,
+    takes a user input and if a task exists with the corresponding
+    number it is marked as not done by updating the appropriate cell,
+    the function contains a try/except block which is
+    used to catch any errors
+    """
+    try:
+        # Get all values in the worksheet
+        values = worksheet.get_all_values()
+
+        if len(values) <= 0:
+            print("No tasks available.")
+            return
+
+        view_tasks(worksheet)
+
+        # Prompt user to choose a task
+        choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to mark as done: " + Style.RESET_ALL))
+
+        # Mark the chosen task as done
+        if 1 <= choice <= len(values):
+            task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
+            worksheet.update_cell(choice, 2, 'Not Done') 
+            print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as not done in Google Spreadsheet.' + Style.RESET_ALL)
+
         else:
             print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
     except Exception as e:
@@ -170,6 +204,8 @@ def main():
             elif choice == '4':
                 mark_task_as_done(worksheet)
             elif choice == '5':
+                mark_task_as_not_done(worksheet)
+            elif choice == '6':
                 break
 
 
