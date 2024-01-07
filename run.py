@@ -104,7 +104,7 @@ def remove_task(worksheet):
 
 
 def mark_task_as_done(worksheet):
-    # Get all values in the worksheet
+        # Get all values in the worksheet
         values = worksheet.get_all_values()
 
         if len(values) <= 0:
@@ -113,6 +113,16 @@ def mark_task_as_done(worksheet):
 
         view_tasks(worksheet)
 
+        # Prompt user to choose a task
+        choice = int(input("Enter the number of the task to mark as done: "))
+
+        if 1 <= choice <= len(values):
+            task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
+            worksheet.update_cell(choice, 2, 'Done') 
+            print(f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.')
+            print(task_to_mark_as_done)
+        else:
+            print("Invalid choice. Please enter a valid number.")
 
 def display_menu():
     """
