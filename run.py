@@ -125,7 +125,7 @@ def mark_task_as_done(worksheet):
         else:
             print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
     except Exception as e:
-        print(f"Error: {e}")
+        print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
 def display_menu():
     """
