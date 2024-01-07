@@ -130,11 +130,11 @@ def mark_task_as_done(worksheet):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
             worksheet.update_cell(choice, 2, 'Done') 
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.' + Style.RESET_ALL)
-            print(task_to_mark_as_done)
         else:
             print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
     except Exception as e:
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
+
 
 def display_menu():
     """
