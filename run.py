@@ -114,15 +114,15 @@ def mark_task_as_done(worksheet):
         view_tasks(worksheet)
 
         # Prompt user to choose a task
-        choice = int(input("Enter the number of the task to mark as done: "))
+        choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to mark as done: " + Style.RESET_ALL))
 
         if 1 <= choice <= len(values):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
             worksheet.update_cell(choice, 2, 'Done') 
-            print(f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.')
+            print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.' + Style.RESET_ALL)
             print(task_to_mark_as_done)
         else:
-            print("Invalid choice. Please enter a valid number.")
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
 
 def display_menu():
     """
