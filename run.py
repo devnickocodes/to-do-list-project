@@ -99,7 +99,7 @@ def remove_task(worksheet):
             worksheet.delete_rows(choice)
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_remove}" removed from Google Spreadsheet.' + Style.RESET_ALL)
         else:
-            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid task number." + Style.RESET_ALL)
     except Exception as e:
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
@@ -132,7 +132,7 @@ def mark_task_as_done(worksheet):
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
-            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid task number." + Style.RESET_ALL)
     except Exception as e:
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
@@ -165,7 +165,7 @@ def mark_task_as_not_done(worksheet):
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as not done in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
-            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid number." + Style.RESET_ALL)
+            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid task number." + Style.RESET_ALL)
     except Exception as e:
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
