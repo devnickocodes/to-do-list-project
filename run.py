@@ -8,6 +8,10 @@ from colorama import Fore, Style, Back
 import pyfiglet
 
 
+# Initialize Colorama
+colorama.init()
+
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
