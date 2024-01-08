@@ -123,7 +123,7 @@ def mark_task_as_done(worksheet, status = 'Done'):
         view_tasks(worksheet)
 
         # Prompt user to choose a task
-        choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to mark as done: " + Style.RESET_ALL))
+        choice = int(input(Fore.YELLOW + Style.BRIGHT + f"Enter the number of the task to mark as {status}: " + Style.RESET_ALL))
 
         # Mark the chosen task as done
         if 1 <= choice <= len(values):
