@@ -50,7 +50,7 @@ def add_task(worksheet):
             print(Fore.RED + Style.BRIGHT + "Task cannot be empty. Please try again." + Style.RESET_ALL)
             return
 
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    timestamp = datetime.now().strftime('%d-%m-%Y %H:%M')
     # Append task data to the Google Spreadsheet
     worksheet.append_row([task, 'Not Done', timestamp])
     print(Fore.GREEN + Style.BRIGHT + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
