@@ -173,7 +173,7 @@ def display_menu():
 
 def main():
 
-    print(figlet_format("Welcome to your To - Do List !", font = "avatar", width = 80))
+    print(figlet_format("Welcome to your To - Do List !", font = "avatar", width = 80, justify = 'center'))
     worksheet = authenticate_google_sheets()
 
     if worksheet:
