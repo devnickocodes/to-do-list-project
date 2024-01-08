@@ -207,7 +207,8 @@ def main():
                 mark_task_as_not_done(worksheet)
             elif choice == '6':
                 break
-
+            else:
+                print("Invalid choice. Please enter a number between 1 and 6.")
 
 main()
 
