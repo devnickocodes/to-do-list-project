@@ -104,7 +104,7 @@ def remove_task(worksheet):
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
 
-def mark_task_as_done(worksheet):
+def mark_task_as_done(worksheet, style = 'Done'):
     """
     Function that checks for any existing tasks, displays them,
     takes a user input and if a task exists with the corresponding
@@ -128,7 +128,7 @@ def mark_task_as_done(worksheet):
         # Mark the chosen task as done
         if 1 <= choice <= len(values):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
-            worksheet.update_cell(choice, 2, 'Done') 
+            worksheet.update_cell(choice, 2, style) 
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as done in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
