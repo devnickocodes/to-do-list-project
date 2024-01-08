@@ -5,7 +5,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 from colorama import init, Fore, Style, Back
-import pyfiglet
+from pyfiglet import figlet_format 
 
 
 # Initialize colorama
@@ -172,6 +172,8 @@ def display_menu():
 
 
 def main():
+
+    print(figlet_format("Welcome to your To - Do List !", font = "avatar", width = 80))
     worksheet = authenticate_google_sheets()
 
     if worksheet:
