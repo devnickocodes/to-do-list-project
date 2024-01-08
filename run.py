@@ -128,7 +128,7 @@ def mark_task_as_done(worksheet, status = 'Done'):
         # Mark the chosen task as done
         if 1 <= choice <= len(values):
             task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
-            worksheet.update_cell(choice, 2, 'Done') 
+            worksheet.update_cell(choice, 2, status) 
             print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as {status} in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
@@ -145,29 +145,8 @@ def mark_task_as_not_done(worksheet):
     the function contains a try/except block which is
     used to catch any errors
     """
-    try:
-        # Get all values in the worksheet
-        values = worksheet.get_all_values()
-
-        if len(values) <= 0:
-            print("No tasks available.")
-            return
-
-        view_tasks(worksheet)
-
-        # Prompt user to choose a task
-        choice = int(input(Fore.YELLOW + Style.BRIGHT + "Enter the number of the task to mark as done: " + Style.RESET_ALL))
-
-        # Mark the chosen task as done
-        if 1 <= choice <= len(values):
-            task_to_mark_as_done = values[choice - 1][0]  # Adjust for 0-based indexing
-            worksheet.update_cell(choice, 2, 'Not Done') 
-            print(Fore.GREEN + Style.BRIGHT + f'Task "{task_to_mark_as_done}" marked as not done in Google Spreadsheet.' + Style.RESET_ALL)
-
-        else:
-            print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a valid task number." + Style.RESET_ALL)
-    except Exception as e:
-        print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
+    mark_task_as_done(worksheet, status = 'Not Done')
+    
 
 
 def display_menu():
