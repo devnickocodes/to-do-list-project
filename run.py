@@ -208,7 +208,7 @@ def main():
             elif choice == '6':
                 break
             else:
-                print("Invalid choice. Please enter a number between 1 and 6.")
+                print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
 
 main()
 
