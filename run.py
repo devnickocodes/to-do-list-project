@@ -5,7 +5,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 from colorama import Fore, Style, Back
-from pyfiglet import figlet_format 
+import pyfiglet 
 
 
 SCOPE = [
@@ -192,4 +192,4 @@ def display_menu():
 
 # main()
 
-print(figlet_format("Welcome to your To - Do List !", font = "avatar", width = 80))
+print(pyfiglet.figlet_format("Welcome to your To - Do List !", font = "avatar", width = 80))
