@@ -198,7 +198,8 @@ def main():
     """
 
     title_text()
-    worksheet = authenticate_google_sheets()
+    google_authenticator = GoogleSheetValidator()
+    worksheet = google_authenticator.worksheet
 
     if worksheet:
         while True:
