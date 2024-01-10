@@ -172,6 +172,13 @@ def display_menu():
 
 
 def main():
+    """
+    Function that combines all the other main functions
+    that operate the app. Prints the intro message 
+    retrieves and validates the Google Spreadsheet, takes
+    user input and based on that input it invokes the 
+    necessary function. 
+    """
 
     print(figlet_format("Welcome to your To-Do List!", font = "avatar", width = 80, justify = 'center'))
     worksheet = authenticate_google_sheets()
