@@ -224,4 +224,6 @@ def main():
                 print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
 
 
-main()
+#The code block is inspired by Shaun Halverson
+if __name__ == "__main__":
+    main()
