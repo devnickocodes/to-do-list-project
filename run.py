@@ -25,7 +25,7 @@ class GoogleSheetValidator:
         self.worksheet = self.authenticate_google_sheets()
         
         
-    def authenticate_google_sheets():
+    def authenticate_google_sheets(self):
         """
         Function that deals with authentication, access and retieval
         of Google Sheets spreadsheet for the tasks, it includes
@@ -33,10 +33,10 @@ class GoogleSheetValidator:
         authentication process arise and finally returns the retrieved spreadsheet
         """
         try:
-            CREDS = Credentials.from_service_account_file('creds.json')
-            SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+            CREDS = Credentials.from_service_account_file(self.creds_file)
+            SCOPED_CREDS = CREDS.with_scopes(self.SCOPE)
             GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-            SHEET = GSPREAD_CLIENT.open('to-do-list-app')
+            SHEET = GSPREAD_CLIENT.open(self.spreadsheet_name)
             worksheet = SHEET.get_worksheet(0)
             return worksheet
         except Exception as e:
