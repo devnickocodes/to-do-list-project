@@ -51,21 +51,26 @@ def add_task(worksheet):
     assigns it to a variable task, assigns a timestamp to a
     variable timestamp, and appends the task, an initial status
     of 'Not Done', and the timestamp to the Google Spreadsheet.
-    The function uses a while loop to check if the task the user has entered 
+    The function uses a while loop to check if the task the user has entered
     is empty
     """
     while True:
-        task = input(Fore.YELLOW + Style.BRIGHT + "Enter the task:\n" + Style.RESET_ALL)
-        if task.strip():  # Check if the input is non-empty after removing leading/trailing whitespaces
+        task = input(Fore.YELLOW + Style.BRIGHT
+                     + "Enter the task:\n" + Style.RESET_ALL)
+        # Check if the input is non-empty after removing whitespaces
+        if task.strip():
             break
         else:
-            print(Fore.RED + Style.BRIGHT + "Task cannot be empty. Please try again." + Style.RESET_ALL)
+            print(Fore.RED + Style.BRIGHT
+                  + "Task cannot be empty. Please try again."
+                  + Style.RESET_ALL)
             return
 
     timestamp = datetime.now().strftime('%d-%m-%Y %H:%M')
     # Append task data to the Google Spreadsheet
     worksheet.append_row([task, 'Not Done', timestamp])
-    print(Fore.GREEN + Style.BRIGHT + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
+    print(Fore.GREEN + Style.BRIGHT
+          + f'Task "{task}" added to Google Spreadsheet.' + Style.RESET_ALL)
 
 
 def view_tasks(worksheet):
