@@ -159,6 +159,8 @@ def display_menu():
     Function that displays the menu with the available
     options for the To-Do List to the user
     """
+    #The menu display is inspired by Shaun Halverson's YouTube video
+    
     print(Fore.CYAN + Style.BRIGHT)
     print("\n===== To-Do List App =====")
     print("1. Add Task")
@@ -170,40 +172,46 @@ def display_menu():
     print("=========================")
     print(Style.RESET_ALL)
 
+def title_text():
+    intro = figlet_format("Welcome to your To-Do List !", font = "avatar", width = 75, justify = 'center')
+    author = figlet_format("By Nikolay Hristev", font = "avatar", width = 80, justify = 'center')
+    
+    print(Fore.LIGHTBLUE_EX + intro)
+    print(author + Style.RESET_ALL)
 
-def main():
-    """
-    Function that combines all the other main functions
-    that operate the app. Prints the intro message 
-    retrieves and validates the Google Spreadsheet, takes
-    user input and based on that input it invokes the 
-    necessary function. 
-    """
+# def main():
+#     """
+#     Function that combines all the other main functions
+#     that operate the app. Prints the intro message 
+#     retrieves and validates the Google Spreadsheet, takes
+#     user input and based on that input it invokes the 
+#     necessary function. 
+#     """
 
-    print(figlet_format("Welcome to your To-Do List!", font = "avatar", width = 80, justify = 'center'))
-    worksheet = authenticate_google_sheets()
+#     worksheet = authenticate_google_sheets()
 
-    if worksheet:
-        while True:
-            display_menu()
-            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice (1-6):\n" + Style.RESET_ALL)
+#     if worksheet:
+#         while True:
+#             display_menu()
+#             choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice (1-6):\n" + Style.RESET_ALL)
             
-            if choice == '1':
-                add_task(worksheet)
-            elif choice == '2':
-                view_tasks(worksheet)
-            elif choice == '3':
-                remove_task(worksheet)
-            elif choice == '4':
-                mark_task_as_done(worksheet)
-            elif choice == '5':
-                mark_task_as_not_done(worksheet)
-            elif choice == '6':
-                print(Fore.LIGHTMAGENTA_EX + "Thanks for using the To-Do List App!")
-                print("Goobye!" + Style.RESET_ALL)
-                break
-            else:
-                print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
+#             if choice == '1':
+#                 add_task(worksheet)
+#             elif choice == '2':
+#                 view_tasks(worksheet)
+#             elif choice == '3':
+#                 remove_task(worksheet)
+#             elif choice == '4':
+#                 mark_task_as_done(worksheet)
+#             elif choice == '5':
+#                 mark_task_as_not_done(worksheet)
+#             elif choice == '6':
+#                 print(Fore.LIGHTMAGENTA_EX + "Thanks for using the To-Do List App!")
+#                 print("Goobye!" + Style.RESET_ALL)
+#                 break
+#             else:
+#                 print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
 
-main()
+# main()
 
+title_text()
