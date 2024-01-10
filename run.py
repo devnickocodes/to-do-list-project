@@ -178,8 +178,7 @@ def mark_task_as_not_done(worksheet):
     the function contains a try/except block which is
     used to catch any errors
     """
-    mark_task_as_done(worksheet, status = 'Not Done')
-    
+    mark_task_as_done(worksheet, status='Not Done')
 
 
 def display_menu():
@@ -187,8 +186,8 @@ def display_menu():
     Function that displays the menu with the available
     options for the To-Do List to the user
     """
-    
-    #The menu display is inspired by Shaun Halverson's YouTube video
+
+    # The menu display is inspired by Shaun Halverson's YouTube video
     
     print(Fore.CYAN + Style.BRIGHT)
     print("\n===== To-Do List App =====")
