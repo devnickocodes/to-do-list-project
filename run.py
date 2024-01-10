@@ -192,6 +192,8 @@ def main():
             elif choice == '5':
                 mark_task_as_not_done(worksheet)
             elif choice == '6':
+                print("Thanks for using the To-Do List App!")
+                print("Goobye!")
                 break
             else:
                 print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
