@@ -5,11 +5,12 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 from colorama import init, Fore, Style, Back
-from pyfiglet import figlet_format 
+from pyfiglet import figlet_format
 
 
 # Initialize colorama
 init()
+
 
 class GoogleSheetValidator:
     SCOPE = [
@@ -18,19 +19,19 @@ class GoogleSheetValidator:
         "https://www.googleapis.com/auth/drive"
         ]
 
-
-    def __init__(self, creds_file='creds.json', spreadsheet_name='to-do-list-app'):
+    def __init__(self, creds_file='creds.json',
+                 spreadsheet_name='to-do-list-app'):
         self.creds_file = creds_file
         self.spreadsheet_name = spreadsheet_name
         self.worksheet = self.authenticate_google_sheets()
-        
-        
+
     def authenticate_google_sheets(self):
         """
         Function that deals with authentication, access and retieval
         of Google Sheets spreadsheet for the tasks, it includes
         a try - except block that handles the issues if any in the
-        authentication process arise and finally returns the retrieved spreadsheet
+        authentication process arise and finally
+        returns the retrieved spreadsheet
         """
         try:
             CREDS = Credentials.from_service_account_file(self.creds_file)
@@ -165,6 +166,7 @@ def display_menu():
     Function that displays the menu with the available
     options for the To-Do List to the user
     """
+    
     #The menu display is inspired by Shaun Halverson's YouTube video
     
     print(Fore.CYAN + Style.BRIGHT)
@@ -224,6 +226,6 @@ def main():
                 print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
 
 
-#The code block is inspired by Shaun Halverson
+# The code block is inspired by Shaun Halverson
 if __name__ == "__main__":
     main()
