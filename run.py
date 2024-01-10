@@ -19,6 +19,12 @@ class GoogleSheetValidator:
         ]
 
 
+    def __init__(self, creds_file='creds.json', spreadsheet_name='to-do-list-app'):
+        self.creds_file = creds_file
+        self.spreadsheet_name = spreadsheet_name
+        self.worksheet = self.authenticate_google_sheets()
+        
+        
     def authenticate_google_sheets():
         """
         Function that deals with authentication, access and retieval
