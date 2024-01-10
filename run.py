@@ -170,6 +170,7 @@ def mark_task_as_done(worksheet, status='Done'):
     except Exception as e:
         print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
+
 def mark_task_as_not_done(worksheet):
     """
     Function that checks for any existing tasks, displays them,
@@ -188,7 +189,7 @@ def display_menu():
     """
 
     # The menu display is inspired by Shaun Halverson's YouTube video
-    
+
     print(Fore.CYAN + Style.BRIGHT)
     print("\n===== To-Do List App =====")
     print("1. Add Task")
@@ -210,17 +211,18 @@ def title_text():
 
     author = figlet_format("By Nikolay Hristev",
                            font="contessa", width=70, justify='center')
-    
+
     print(Fore.YELLOW + Style.BRIGHT + intro)
     print(author + Style.RESET_ALL)
+
 
 def main():
     """
     Function that combines all the other main functions
-    that operate the app. Prints the intro message 
+    that operate the app. Prints the intro message
     retrieves and validates the Google Spreadsheet, takes
-    user input and based on that input it invokes the 
-    necessary function. 
+    user input and based on that input it invokes the
+    necessary function.
     """
 
     title_text()
@@ -230,8 +232,10 @@ def main():
     if worksheet:
         while True:
             display_menu()
-            choice = input(Fore.WHITE + Style.BRIGHT + "Enter your choice (1-6):\n" + Style.RESET_ALL)
-            
+
+            choice = input(Fore.WHITE + Style.BRIGHT
+                           + "Enter your choice (1-6):\n" + Style.RESET_ALL)
+
             if choice == '1':
                 add_task(worksheet)
             elif choice == '2':
@@ -243,11 +247,14 @@ def main():
             elif choice == '5':
                 mark_task_as_not_done(worksheet)
             elif choice == '6':
-                print(Fore.LIGHTBLUE_EX + "Thanks for using the To-Do List App!")
+                print(Fore.LIGHTBLUE_EX
+                      + "Thanks for using the To-Do List App!")
                 print("Goobye!" + Style.RESET_ALL)
                 break
             else:
-                print(Fore.RED + Style.BRIGHT + "Invalid choice. Please enter a number between 1 and 6." + Style.RESET_ALL)
+                print(Fore.RED + Style.BRIGHT
+                      + "Invalid choice. Please enter a number (1-6)."
+                      + Style.RESET_ALL)
 
 
 # The code block is inspired by Shaun Halverson
