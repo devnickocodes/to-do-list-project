@@ -11,31 +11,31 @@ from pyfiglet import figlet_format
 # Initialize colorama
 init()
 
+class GoogleSheetValidator:
+    SCOPE = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive.file",
+        "https://www.googleapis.com/auth/drive"
+        ]
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
 
-
-def authenticate_google_sheets():
-    """
-    Function that deals with authentication, access and retieval
-    of Google Sheets spreadsheet for the tasks, it includes
-    a try - except block that handles the issues if any in the
-    authentication process arise and finally returns the retrieved spreadsheet
-    """
-    try:
-        CREDS = Credentials.from_service_account_file('creds.json')
-        SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-        GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-        SHEET = GSPREAD_CLIENT.open('to-do-list-app')
-        worksheet = SHEET.get_worksheet(0)
-        return worksheet
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
+    def authenticate_google_sheets():
+        """
+        Function that deals with authentication, access and retieval
+        of Google Sheets spreadsheet for the tasks, it includes
+        a try - except block that handles the issues if any in the
+        authentication process arise and finally returns the retrieved spreadsheet
+        """
+        try:
+            CREDS = Credentials.from_service_account_file('creds.json')
+            SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+            GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+            SHEET = GSPREAD_CLIENT.open('to-do-list-app')
+            worksheet = SHEET.get_worksheet(0)
+            return worksheet
+        except Exception as e:
+            print(f"Error: {e}")
+            return None
 
 
 def add_task(worksheet):
