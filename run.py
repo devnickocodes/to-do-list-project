@@ -173,7 +173,7 @@ def display_menu():
     print(Style.RESET_ALL)
 
 def title_text():
-    intro = figlet_format("Welcome to your To-Do List !", font = "eftiwater", width = 75, justify = 'center')
+    intro = figlet_format("Welcome to your To-Do List !", font = "mini", width = 70, justify = 'center')
     author = figlet_format("By Nikolay Hristev", font = "contessa", width = 80, justify = 'center')
     
     print(Fore.LIGHTBLUE_EX + Style.BRIGHT + intro)
