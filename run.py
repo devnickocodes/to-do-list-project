@@ -207,7 +207,7 @@ def main():
             elif choice == '5':
                 mark_task_as_not_done(worksheet)
             elif choice == '6':
-                print(Fore.LIGHTMAGENTA_EX + "Thanks for using the To-Do List App!")
+                print(Fore.LIGHTBLUE_EX + "Thanks for using the To-Do List App!")
                 print("Goobye!" + Style.RESET_ALL)
                 break
             else:
