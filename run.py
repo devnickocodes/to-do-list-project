@@ -162,7 +162,13 @@ def mark_task_as_done(worksheet, status='Done'):
             worksheet.update_cell(choice, 2, status)
             print(Fore.GREEN + Style.BRIGHT
                   + f'Task "{task_to_mark_as_done}" marked as {status} in Google Spreadsheet.' + Style.RESET_ALL)
- 
+
+        else:
+            print(Fore.RED + Style.BRIGHT
+                  + "Invalid choice. Please enter a valid task number."
+                  + Style.RESET_ALL)
+    except Exception as e:
+        print(Fore.RED + Style.BRIGHT + f"Error: {e}" + Style.RESET_ALL)
 
 def mark_task_as_not_done(worksheet):
     """
