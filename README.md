@@ -136,12 +136,20 @@ This feature displays goodbye messages and stops the running of the app.
 
 Find the technologies used for this project below:
 
-- The project was developed using Python.
-    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    - The project was developed using Python.
 
-- The script used to run the Code Institute mock terminal is done with JavaScript.
-    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - JavaScript script was used to run Code Institute’s mock terminal
 
+- [Github](https://github.com/)
+    - For storage of the website's code as well as deployment, Github was used.
+
+-[Git](https://git-scm.com/)
+    - Git commands were used in the IDE for version control.
+
+- [Gitpod](https://gitpod.io/) and [CodeAnywhere](https://codeanywhere.com/solutions/collaborate)
+    - CodeAnywhere and Gitpod IDEs were used to write the code for this project, which will be pushed to GitHub with Git commands.
 
 
     
