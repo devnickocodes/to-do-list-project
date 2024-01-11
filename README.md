@@ -164,4 +164,14 @@ Find the technologies used for this project below:
 
     - Google Cloud Platform was used to enable the APIs for this project.
 
-    
+## Imported Libraries 
+
+- [gspread](https://docs.gspread.org/en/v5.7.0/) was used to connect the project to Google Sheets to retrieve, read and update the tasks' list.
+- [PyFiglet](https://pypi.org/project/pyfiglet/) was used for the intro and author sections at the beggining of the program.
+- [Colorama](https://pypi.org/project/colorama/) was used for styling of the terminal by changing the colors of the print functions.
+- [Datetime](https://docs.python.org/3/library/datetime.html) was used for the timestamps of the tasks.
+- [google-auth](https://google-auth.readthedocs.io/en/master/#google-auth) was used for secure authentication with Google APIs
+
+
+
+
