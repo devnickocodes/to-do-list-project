@@ -9,13 +9,13 @@ The To-Do List App provides the user with an easy way to keep track of their tas
 
 ## Project 
 
-The objective for this project is to:
+The objective of this project is to:
 
 - Allow the user to conveniently manage their tasks.
 - Allow the user to add as many tasks as they would like.
 - Allow the user to keep track of the status of their tasks.
 - Allow the user to remove any task they would like.
-- Allow the user to change the status of their tasks from Not Done to Done and vice verse as many times as they would like.
+- Allow the user to change the status of their tasks from Not Done to Done and vice versa as many times as they would like.
 - Allow the user to see the timestamps for their task was created.
 - Allow the user to exit the app.
 
