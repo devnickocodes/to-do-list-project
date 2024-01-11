@@ -229,10 +229,10 @@ def main():
     user input and based on that input it invokes the
     necessary function.
     """
-
-    title_text()
     google_authenticator = GoogleSheetValidator()
     worksheet = google_authenticator.worksheet
+
+    title_text()
 
     if worksheet:
         while True:
