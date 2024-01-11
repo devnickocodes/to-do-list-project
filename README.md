@@ -97,3 +97,12 @@ This feature allows the user to create a task that will be stored in Google Spre
 This feature retrieves all the available tasks with their statuses and timestamps and displays them to the user. After that the user is directed to the menu again.
 
 ![View Tasks (Option - 2)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/view-tasks.png)
+
+### Remove Task
+
+Next feature displays all the available tasks and takes a user input as to which task should be removed, if the task exists it is removed from the spreadsheet, if it doesn’t the user is directed to the menu again.
+
+![Remove Task (Option - 3)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/remove-task.png)
+
+
+
