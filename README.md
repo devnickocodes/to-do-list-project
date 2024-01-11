@@ -50,3 +50,4 @@ After writing some of the code I was using the os module and while it was workin
 
 If the user tries to add an empty task they will be met with a message that says that the task cannot be empty and they will be redirected to the menu.
 
+![Empty Task Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-empty-task-add-task-option.png)
