@@ -146,7 +146,8 @@ def mark_task_as_done(worksheet, status='Done'):
         values = worksheet.get_all_values()
 
         if len(values) <= 0:
-            print("No tasks available.")
+            print(Fore.RED + Style.BRIGHT + "No tasks available."
+                  + Style.RESET_ALL)
             return
 
         view_tasks(worksheet)
