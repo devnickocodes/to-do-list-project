@@ -213,7 +213,7 @@ def title_text():
                           font="eftipiti", width=80, justify='center')
 
     author = figlet_format("By Nikolay Hristev",
-                           font="contessa", width=70, justify='center')
+                           font="bubble", width=70, justify='center')
 
     print(Fore.YELLOW + Style.BRIGHT + intro)
     print(author + Style.RESET_ALL)
