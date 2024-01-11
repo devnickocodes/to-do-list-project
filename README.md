@@ -56,10 +56,13 @@ If the user tries to add an empty task they will be met with a message that says
 
 - Remove Task (Option - 3)
 
-If the user tries to remove a non-existent task, they will be made aware that they need to choose a valid task number and they will be redirected to the menu.
+If the user tries to remove a non-existent task, they will be reminded that they need to choose a valid task number and they will be redirected to the menu.
 
 ![Non-existent Task Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-non-existant-task-remove-task-option.png)
 
 If the user tries to enter a letter, they will be show an error message which is part of the try/except block and they will be redirected to the menu.
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-remove-task-option.png)
+
+
+ 
