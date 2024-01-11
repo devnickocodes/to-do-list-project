@@ -35,3 +35,8 @@ The objective for this project is to:
 - Create a program which will be usefull to a lot of people and is easy to maintain. 
 - Create a program that is flexible and allows changes and additional options to be added if needed.
 - Create a program that is convenient to use, straightforward and easy to navigate around.
+
+### Pre development
+
+I created a flowchart to use it as guidance and break the code into smaller steps, this way I had a clear idea of what I needed to implement. The flowchart shows the logic that the app uses depending on which option is given. The inputs that it is asking from the user as well as the operations it will perform based on those inputs, as well as how the program handles a task number that doesn’t exist, or if a letter is given instead of an integer number.
+
