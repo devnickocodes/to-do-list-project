@@ -131,3 +131,17 @@ This feature displays goodbye messages and stops the running of the app.
 ### Download Tasks List
 
 - add an option that allows the user to download the spreadsheet with their tasks on their computer.
+
+## Technologies Used
+
+Find the technologies used for this project below:
+
+- The project was developed using Python.
+    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+- The script used to run the Code Institute mock terminal is done with JavaScript.
+    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+
+    
