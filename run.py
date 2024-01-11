@@ -163,9 +163,9 @@ def mark_task_as_done(worksheet, status='Done'):
             # Adjust for 0-based indexing
             task_to_mark_as_done = values[choice - 1][0]
             worksheet.update_cell(choice, 2, status)
-            print(Fore.GREEN + Style.BRIGHT
-                  + f'Task "{task_to_mark_as_done}" marked as \
-                  {status} in Google Spreadsheet.' + Style.RESET_ALL)
+            print(Fore.GREEN + Style.BRIGHT +
+                  f'Task "{task_to_mark_as_done}" marked as '
+                  f'{status} in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
             print(Fore.RED + Style.BRIGHT
