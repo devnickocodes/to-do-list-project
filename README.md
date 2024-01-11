@@ -18,3 +18,14 @@ The objective for this project is to:
 - Allow the user to change the status of their tasks from Not Done to Done and vice verse as many times as they would like.
 - Allow the user to see the timestamps for their task was created.
 - Allow the user to exit the app.
+
+### User goals:
+
+Clearly see the intro and author of the app.
+Add a task to a Google Spreadsheet.
+View the added tasks in the Google Spreadsheet if there are any.
+Remove any task I want.
+Mark any task as Done and update the status of the task in the Google Spreadsheet.
+Mark any task as Not Done and update the status of the task in the Google Spreadsheet.
+See when the task was created.
+Quit the app.
