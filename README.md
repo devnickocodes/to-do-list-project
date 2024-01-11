@@ -73,3 +73,9 @@ If the user tries to mark a non-existent task as done, they will be reminded tha
 If the user tries to enter a letter, they will be show an error message which is part of the try/except block and they will be redirected to the menu.
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-mark-task-as-done-option.png)
+
+- Mark Task As Not Done (Option - 5)
+
+If the user tries to mark a non-existent task as not done, they will be reminded that they need to choose a valid task number and they will be redirected to the menu.
+
+![Input for a non-existent task to mark as not done](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-non-existant-task-mark-task-as-not-done-option.png)
