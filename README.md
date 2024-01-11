@@ -40,3 +40,4 @@ The objective for this project is to:
 
 I created a flowchart to use it as guidance and break the code into smaller steps, this way I had a clear idea of what I needed to implement. The flowchart shows the logic that the app uses depending on which option is given. The inputs that it is asking from the user as well as the operations it will perform based on those inputs, as well as how the program handles a task number that doesn’t exist, or if a letter is given instead of an integer number.
 
+![To-Do List App Flowchart](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/to-do-list-flowchart.png)
