@@ -163,7 +163,8 @@ def mark_task_as_done(worksheet, status='Done'):
             task_to_mark_as_done = values[choice - 1][0]
             worksheet.update_cell(choice, 2, status)
             print(Fore.GREEN + Style.BRIGHT
-                  + f'Task "{task_to_mark_as_done}" marked as {status} in Google Spreadsheet.' + Style.RESET_ALL)
+                  + f'Task "{task_to_mark_as_done}" marked as \
+                  {status} in Google Spreadsheet.' + Style.RESET_ALL)
 
         else:
             print(Fore.RED + Style.BRIGHT
@@ -209,7 +210,7 @@ def title_text():
     Function that displays the styled intro and author texts
     """
     intro = figlet_format("Welcome to your To-Do List !",
-                          font="eftipiti", width=70, justify='center')
+                          font="eftipiti", width=80, justify='center')
 
     author = figlet_format("By Nikolay Hristev",
                            font="contessa", width=70, justify='center')
