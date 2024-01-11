@@ -104,5 +104,9 @@ Next feature displays all the available tasks and takes a user input as to which
 
 ![Remove Task (Option - 3)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/remove-task.png)
 
+### Mark Task As Done 
 
+This feature displays all the available tasks and takes a user input as to which task should be marked as done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Done’ after which the user is directed to the menu again.
+
+![Mark Task As Done (Option - 4)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-done.png)
 
