@@ -121,3 +121,13 @@ This feature displays all the available tasks and takes a user input as to which
 This feature displays goodbye messages and stops the running of the app.
 
 ![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png)
+
+## Features Left To Implement
+
+### Authentication
+
+- Add a form of authentication so each user gets their own Google sheet and they can’t access each other’s.
+
+### Download Tasks List
+
+- add an option that allows the user to download the spreadsheet with their tasks on their computer.
