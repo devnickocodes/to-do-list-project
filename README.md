@@ -115,3 +115,9 @@ This feature displays all the available tasks and takes a user input as to which
 This feature displays all the available tasks and takes a user input as to which task should be marked as not done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Not Done’ after which the user is directed to the menu again.
 
 ![Mark Task As Not Done (Option - 5)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-not-done.png)
+
+### Quit
+
+This feature displays goodbye messages and stops the running of the app.
+
+![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png)
