@@ -32,9 +32,9 @@ The objective of this project is to:
 
 ### Creator Goals:
 
-- Create a program which will be usefull to a lot of people and is easy to maintain. 
+- Create a program which will be useful to a lot of people and is easy to maintain. 
 - Create a program that is flexible and allows changes and additional options to be added if needed.
-- Create a program that is convenient to use, straightforward and easy to navigate around.
+- Create a program that is easy to use, and straightforward to navigate around.
 
 ### Pre development
 
