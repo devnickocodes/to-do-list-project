@@ -64,5 +64,8 @@ If the user tries to enter a letter, they will be show an error message which is
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-remove-task-option.png)
 
+- Mark Task As Done (Option - 4)
 
- 
+If the user tries to mark a non-existent task as done, they will be reminded that they need to choose a valid task number and they will be redirected to the menu.
+
+![Input for a non-existent task to mark as done](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-non-existant-task-mark-task-as-done-option.png)
