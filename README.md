@@ -30,7 +30,7 @@ The objective for this project is to:
 - See when the task was created.
 - Quit the app.
 
-### Creator Goals
+### Creator Goals:
 
 - Create a program which will be usefull to a lot of people and is easy to maintain. 
 - Create a program that is flexible and allows changes and additional options to be added if needed.
