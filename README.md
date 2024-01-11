@@ -29,3 +29,9 @@ The objective for this project is to:
 - Mark any task as Not Done and update the status of the task in the Google Spreadsheet.
 - See when the task was created.
 - Quit the app.
+
+### Creator Goals
+
+- Create a program which will be usefull to a lot of people and is easy to maintain. 
+- Create a program that is flexible and allows changes and additional options to be added if needed.
+- Create a program that is convenient to use, straightforward and easy to navigate around.
