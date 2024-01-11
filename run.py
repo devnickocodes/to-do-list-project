@@ -160,7 +160,6 @@ def mark_task_as_done(worksheet, status='Done'):
         if 1 <= choice <= len(values):
 
             # Adjust for 0-based indexing
-
             task_to_mark_as_done = values[choice - 1][0]
             worksheet.update_cell(choice, 2, status)
             print(Fore.GREEN + Style.BRIGHT
@@ -193,7 +192,6 @@ def display_menu():
     """
 
     # The menu display is inspired by Shaun Halverson's YouTube video
-
     print(Fore.CYAN + Style.BRIGHT)
     print("\n===== To-Do List App =====")
     print("1. Add Task")
@@ -211,7 +209,7 @@ def title_text():
     Function that displays the styled intro and author texts
     """
     intro = figlet_format("Welcome to your To-Do List !",
-                          font="standard", width=70, justify='center')
+                          font="eftipiti", width=70, justify='center')
 
     author = figlet_format("By Nikolay Hristev",
                            font="contessa", width=70, justify='center')
