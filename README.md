@@ -86,3 +86,8 @@ If the user tries to enter a letter, they will be show an error message which is
 
 ## Features 
 
+### Add Task
+
+This feature allows the user to create a task that will be stored in Google Spreadsheet. It logs the task in the first cell, creates a status variable with an initial status of ‘Not Done’ and logs it in the second cell and finally creates a timestamp which is logged in the third cell of the spreadsheet. After that the user is directed to the menu again.
+
+![Add Task (Option - 1)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/add-a-task.png)
