@@ -13,6 +13,7 @@ init()
 
 
 class GoogleSheetValidator:
+
     SCOPE = [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive.file",
