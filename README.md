@@ -110,3 +110,8 @@ This feature displays all the available tasks and takes a user input as to which
 
 ![Mark Task As Done (Option - 4)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-done.png)
 
+### Mark Task As Not Done
+
+This feature displays all the available tasks and takes a user input as to which task should be marked as not done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Not Done’ after which the user is directed to the menu again.
+
+![Mark Task As Not Done (Option - 5)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-not-done.png)
