@@ -210,10 +210,10 @@ def title_text():
     Function that displays the styled intro and author texts
     """
     intro = figlet_format("Welcome to your To-Do List !",
-                          font="eftipiti", width=80, justify='center')
+                          font="bubble", width=80, justify='center')
 
     author = figlet_format("By Nikolay Hristev",
-                           font="bubble", width=70, justify='center')
+                           font="eftipiti", width=70, justify='center')
 
     print(Fore.YELLOW + Style.BRIGHT + intro)
     print(author + Style.RESET_ALL)
