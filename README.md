@@ -189,3 +189,16 @@ I imported [this](https://pypi.org/project/pep8/) python style checker.
 I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the code. After removing some blank lines, whitespaces and adjusting lines that were too long the code passed the validation with no issues.
 
 ![CI Python Linter Validation](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/pep8-validator.png)
+
+## Deployment
+
+### Local Deployment
+
+#### How to Fork
+
+1. Sign Up or Log In if you have an account to Github.
+2. Go to the repository for the To-Do List project - [devnickocodes/To-Do List Project](https://github.com/devnickocodes/to-do-list-project)
+3. Click on the Fork button that is on the right side of the repository name.
+
+
+
