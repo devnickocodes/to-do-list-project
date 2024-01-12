@@ -88,31 +88,31 @@ If the user tries to enter a letter, they will be show an error message which is
 
 ### Add Task
 
-This feature allows the user to create a task that will be stored in Google Spreadsheet. It logs the task in the first cell, creates a status variable with an initial status of ‘Not Done’ and logs it in the second cell and finally creates a timestamp which is logged in the third cell of the spreadsheet. After that the user is directed to the menu again.
+This feature allows the user to create a task that will be stored in Google Spreadsheet. It logs the task in the first cell, creates a status variable with an initial status of ‘Not Done’ and logs it in the second cell, and finally creates a timestamp which is logged in the third cell of the spreadsheet. After that, the user is directed to the menu again.
 
 ![Add Task (Option - 1)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/add-a-task.png)
 
 ### View Tasks
 
-This feature retrieves all the available tasks with their statuses and timestamps and displays them to the user. After that the user is directed to the menu again.
+This feature retrieves all the available tasks with their statuses and timestamps and displays them to the user. After that, the user is directed to the menu again.
 
 ![View Tasks (Option - 2)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/view-tasks.png)
 
 ### Remove Task
 
-Next feature displays all the available tasks and takes a user input as to which task should be removed, if the task exists it is removed from the spreadsheet, if it doesn’t the user is directed to the menu again.
+The next feature displays all the available tasks and takes a user input as to which task should be removed, if the task exists it is removed from the spreadsheet, if it doesn’t the user is directed to the menu again.
 
 ![Remove Task (Option - 3)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/remove-task.png)
 
 ### Mark Task As Done 
 
-This feature displays all the available tasks and takes a user input as to which task should be marked as done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Done’ after which the user is directed to the menu again.
+This feature displays all the available tasks and takes user input as to which task should be marked as done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Done’ after which the user is directed to the menu again.
 
 ![Mark Task As Done (Option - 4)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-done.png)
 
 ### Mark Task As Not Done
 
-This feature displays all the available tasks and takes a user input as to which task should be marked as not done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Not Done’ after which the user is directed to the menu again.
+This feature displays all the available tasks and takes user input as to which task should be marked as not done. If the task exists the second cell for that task in the spreadsheet, which is the status cell is updated to ‘Not Done’ after which the user is directed to the menu again.
 
 ![Mark Task As Not Done (Option - 5)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-not-done.png)
 
