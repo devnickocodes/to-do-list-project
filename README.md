@@ -206,3 +206,34 @@ You can make a local copy of The Elements Game project by writing the following 
 
 - `git clone https://github.com/devnickocodes/to-do-list-project.git` 
 
+#### Heroku 
+
+Heroku is used for the deployment of the project, here are the steps after you create your account:
+
+1. Click on 'New' at the top-right corner of your Dashboard, then select 'Create new app'
+2. Choose a distinct app name (as no two projects can have the same name on Heroku) and choose your region
+3. Click on 'Create App' 
+4. Navigate to 'Settings'
+5. Click on 'Reveal Config Vars' 
+6. In the input field of 'KEY' type in 'PORT' and in the input field of 'VALUE' type in '8000' 
+7. You must also include (where applicable) private API key information. In the input field of 'KEY' type in 'CREDS', after that copy the private API contents of your .json file and paste them in the input field of 'VALUE'
+8. Below the 'Config Vars' section, find the 'Buildpacks' (dependancies) section and click on 'Add buildpack'
+9. The order of the buildpacks here is very important. First Add the Python buildpack and after that add the buildpack for Node.js (If they are in a different order, on the left side there are three bars with which you can drag and drop and change their order)
+10. Navigate to the 'Deploy' tab, which is on the left side of the 'Settings' tab, in the deployment method section click on GitHub
+11. To connect your GitHub code to Heroku, type in the name of your repository and then click on 'Search'. Once you see your repository show up click on 'Connect'
+12. Choose a branch from which you wish to deploy.
+13. You can choose to deploy your app manualy in the 'Manual Deploy' section click on 'Deploy Branch'
+14. If you prefer you can also choose automatic deploys, in that case navigate to the 'Automatic Deploys' section and click on 'Enable Automatic Deploys', this method keeps the project up to date with your repository.
+
+- Heroku requires two additional files for deployments
+    
+    - requirements.txt 
+    - Profile
+
+- To install the list of requirements which will go in your requirements.txt file you can use the following command:
+
+    - `pip3 freeze > requirements.txt` 
+
+- To create the Procfile you can use the following command:
+
+    - `echo web: node index.js > Procfile`
