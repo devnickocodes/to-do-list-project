@@ -168,12 +168,12 @@ Find the technologies used for this project below:
 
 - [gspread](https://docs.gspread.org/en/v5.7.0/) was used to connect the project to Google Sheets to retrieve, read and update the tasks' list.
 - [PyFiglet](https://pypi.org/project/pyfiglet/) was used for the intro and author sections at the beggining of the program.
-- [Colorama](https://pypi.org/project/colorama/) was used for styling of the terminal by changing the colors of the print functions.
+- [Colorama](https://pypi.org/project/colorama/) was used for styling the terminal by changing the colors of the print functions.
 - [Datetime](https://docs.python.org/3/library/datetime.html) was used for the timestamps of the tasks.
 - [google-auth](https://google-auth.readthedocs.io/en/master/#google-auth) was used for secure authentication with Google APIs
 
 
-## Testing and Validation
+## Testing 
 
 ## Bugs
 
@@ -182,3 +182,10 @@ Since I installed and imported the PyFiglet library after I had already started 
 ![PyFiglet Module Error](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/pyfiglet-module-not-found-error.png)
 
 
+## Validation
+
+I imported [this](https://pypi.org/project/pep8/) python style checker.
+
+I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the code. After removing some blank lines, whitespaces and adjusting lines that were too long the code passed the validation with no issues.
+
+![CI Python Linter Validation](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/pep8-validator.png)
