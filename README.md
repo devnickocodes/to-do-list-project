@@ -200,5 +200,9 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 2. Go to the repository for the To-Do List project - [devnickocodes/To-Do List Project](https://github.com/devnickocodes/to-do-list-project)
 3. Click on the Fork button that is on the right side of the repository name.
 
+#### How to Clone
 
+You can make a local copy of The Elements Game project by writing the following command in your IDE terminal.
+
+- `git clone https://github.com/devnickocodes/to-do-list-project.git` 
 
