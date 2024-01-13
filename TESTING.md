@@ -42,3 +42,13 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 | User Goal | PASS/FAIL | Image(s) |
 | --------- | --------------- | -------- |
 | Clearly see the intro and author of the app. | PASS | ![To-Do List App Overview](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/to-do-list-app-overview.png) |
+| Add a task to a Google Spreadsheet. | PASS | ![Add Task (Option - 1)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/add-a-task.png) |
+| View the added tasks in the Google Spreadsheet if there are any. | PASS | ![View Tasks (Option - 2)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/view-tasks.png) |
+| Remove any task I want. | PASS | ![Remove Task (Option - 3)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/remove-task.png) |
+| Mark any task as Done and update the status of the task in the Google Spreadsheet. | PASS | ![Mark Task As Done (Option - 4)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-done.png) |
+| Mark any task as Not Done and update the status of the task in the Google Spreadsheet. | PASS | ![Mark Task As Not Done (Option - 5)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/mark-task-as-not-done.png) |
+| See the status of my task | PASS | ![View Tasks (Option - 2)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/view-tasks.png) |
+| See when the task was created. | PASS | ![View Tasks (Option - 2)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/view-tasks.png) |
+|  Quit the app. | PASS | ![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png) |
+
+
