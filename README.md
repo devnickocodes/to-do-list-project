@@ -249,4 +249,6 @@ Heroku is used for the deployment of the project, here are the steps after you c
 - I learned how to use the PyFiglet library [here](https://pypi.org/project/pyfiglet/)
 - I learned how to use the Datetime module [here](https://docs.python.org/3/library/datetime.html)
 - I learned how to break long lines [here](https://peps.python.org/pep-0008/)
-- [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) YouTube playlist helped with concepts regarding the creation of the class 
+- [This](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) YouTube playlist helped with concepts regarding the creation of the class 
+- [This](https://www.geeksforgeeks.org/python-program-to-check-if-string-is-empty-or-not/) page of Geeks for Geeks' website helped me with the if statement using the .strip() method to check if the task that the user is trying to add is empty.
+
