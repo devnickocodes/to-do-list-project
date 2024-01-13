@@ -236,4 +236,17 @@ Heroku is used for the deployment of the project, here are the steps after you c
 
 - To create the Procfile you can use the following command:
 
-    - `echo web: node index.js > Procfile`
+    - `echo web: node index.js > Procfile`  
+
+## Credits
+
+### Code
+
+- Some of the code is inspired by [Code Institute's](https://codeinstitute.net/) Love Sandwiches walkthrough project with some adjustments made.
+- I used [this](https://pypi.org/project/colorama/) website to learn how to use Colorama.
+- The display function and the main method are inspired by [this](https://www.youtube.com/watch?v=aEIHZDv_23U&ab_channel=ShaunHalverson) YouTube video.
+- I chose the PyFiglet fonts from [here](http://www.figlet.org/examples.html)
+- I learned how to use the PyFiglet library [here](https://pypi.org/project/pyfiglet/)
+- I learned how to use the Datetime module [here](https://docs.python.org/3/library/datetime.html)
+- I learned how to break long lines [here](https://peps.python.org/pep-0008/)
+- [this](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) YouTube playlist helped with concepts regarding the creation of the class 
