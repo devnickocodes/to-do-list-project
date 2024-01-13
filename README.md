@@ -256,3 +256,11 @@ Heroku is used for the deployment of the project, here are the steps after you c
 ### Design 
 
 - I used [Lucidchart](https://www.lucidchart.com/pages) to create the flowchart for the project.
+
+### Acknowledgements
+
+- I would like to acknowledge and thank the following people.
+
+- Jubril Akolade - My Code Institute Mentor.
+- The Code Institute Tutor Support - For their awesome and quick technical help.
+- Thank you to everyone who took the time to look over the app and give feedback.
