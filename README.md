@@ -252,3 +252,6 @@ Heroku is used for the deployment of the project, here are the steps after you c
 - [This](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) YouTube playlist helped with concepts regarding the creation of the class 
 - [This](https://www.geeksforgeeks.org/python-program-to-check-if-string-is-empty-or-not/) page of Geeks for Geeks' website helped me with the if statement using the .strip() method to check if the task that the user is trying to add is empty.
 
+### Design 
+
+- I used [Lucidchart](https://www.lucidchart.com/pages) to create the flowchart for the project.
