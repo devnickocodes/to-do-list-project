@@ -13,10 +13,18 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Program Start | N/A | Intro and Author texts shown, menu is displayed and user is prompted to choose one of the options | PASS |
 | Menu          | Option 1 (Add Task) chosen | User is prompted to type in a task to be added to the list | PASS |
-| Menu Option 1 (Add Task) | Types in a task to be added to the list | Task added to the list | PASS |
-| Menu Option 1 (Add Task) | Tried to add an empty task | Error message displayed and user navigated to the menu | PASS |
-| Menu          | Option 2 (View Tasks) chosen | (If there are tasks) Tasks with the statuses and timestamps are displayed | PASS |
-| Menu          | Option 2 (View Tasks) chosen | (If there are no tasks) Display a message saying there are no tasks | PASS |
+| Menu Option 1 (Add Task) | Types in a task to be added to the list | Task added to the list and user is navigated to the menu | PASS |
+| Menu Option 1 (Add Task) | Tried to add an empty task | Error message displayed and user is navigated to the menu | PASS |
+| Menu          | Option 2 (View Tasks) chosen | (If there are tasks) Tasks with the statuses and timestamps are displayed and user is navigated to the menu| PASS |
+| Menu          | Option 2 (View Tasks) chosen | (If there are no tasks) Display a message saying there are no tasks and user is navigated to the menu| PASS |
+| Menu          | Option 3 (Remove Task) chosen | (If there are no tasks) Display a message saying there are no tasks and user is navigated to the menu| PASS |
+| Menu          | Option 3 (Remove Task) chosen | (If there are tasks) Prompt the user to input the number of the task they want to remove | PASS |
+| Menu Option 3 (Remove Task) chosen | The user chooses a task number that matches one of the tasks | Task is removed and user is navigated to the menu| PASS |
+| Menu Option 3 (Remove Task) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task message and user is navigated to the menu| PASS |
+| Menu Option 3 (Remove Task) chosen | The user inputs a letter | Display an error message and user is navigated to the menu| PASS |
+| Menu Option 3 (Remove Task) chosen | The user inputs empty input | Display an error message and user is navigated to the menu| PASS |
+
+
 
 
 
