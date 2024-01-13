@@ -11,4 +11,4 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 
 |   Feature     |   Action                      |   Expected Result            |     PASS/FAIL     |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Program Start |             N/A               | Intro and Author texts shown, menu is displayed and user is prompted to choose one of the options | PASS |
+| Program Start | N/A | Intro and Author texts shown, menu is displayed and user is prompted to choose one of the options | PASS |
