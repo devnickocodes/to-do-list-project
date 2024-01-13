@@ -20,13 +20,12 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 | Menu          | Option 3 (Remove Task) chosen | (If there are no tasks) Display a message saying there are no tasks and user is navigated to the menu| PASS |
 | Menu          | Option 3 (Remove Task) chosen | (If there are tasks) Prompt the user to input the number of the task they want to remove | PASS |
 | Menu Option 3 (Remove Task) chosen | The user chooses a task number that matches one of the tasks | Task is removed and user is navigated to the menu| PASS |
-| Menu Option 3 (Remove Task) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task message and user is navigated to the menu| PASS |
-| Menu Option 3 (Remove Task) chosen | The user inputs a letter | Display an error message and user is navigated to the menu| PASS |
-| Menu Option 3 (Remove Task) chosen | The user inputs empty input | Display an error message and user is navigated to the menu| PASS |
-
-
-
-
-
-
-
+| Menu Option 3 (Remove Task) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task number and user is navigated to the menu | PASS |
+| Menu Option 3 (Remove Task) chosen | The user inputs a letter | Display an error message and user is navigated to the menu | PASS |
+| Menu Option 3 (Remove Task) chosen | The user inputs an empty input | Display an error message and user is navigated to the menu | PASS |
+| Menu          | Option 4 (Mark Task As Done) chosen | (If there are no tasks) Display a message saying there are no tasks and user is navigated to the menu| PASS |
+| Menu          | Option 4 (Mark Task As Done) chosen | (If there are tasks) Prompt the user to input the number of the task they want to mark as done | PASS |
+| Menu Option 4 (Mark Task As Done) chosen | The user chooses a task number that matches one of the tasks | Task is marked as done and user is navigated to the menu | PASS |
+| Menu Option 4 (Mark Task As Done) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task number and user is navigated to the menu | PASS |
+| Menu Option 4 (Mark Task As Done) chosen | The user inputs a letter | Display an error message and user is navigated to the menu | PASS |
+| Menu Option 4 (Mark Task As Done) chosen | The user inputs an empty input | Display an error message and user is navigated to the menu | PASS |
