@@ -35,4 +35,10 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 | Menu Option 5 (Mark Task As Not Done) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task number and user is navigated to the menu | PASS |
 | Menu Option 5 (Mark Task As Not Done) chosen | The user inputs a letter | Display an error message and user is navigated to the menu | PASS |
 | Menu Option 5 (Mark Task As Not Done) chosen | The user inputs an empty input | Display an error message and user is navigated to the menu | PASS |
-| Menu          | Option 6 (Quit) chosen | display goodbye messages and quit the app | PASS |
+| Menu          | Option 6 (Quit) chosen | Display goodbye messages and quit the app | PASS |
+
+## User Goals Testing
+
+| User Goal | PASS/FAIL | Image(s) |
+| --------- | --------------- | -------- |
+| Clearly see the intro and author of the app. | PASS | ![To-Do List App Overview](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/to-do-list-app-overview.png) |

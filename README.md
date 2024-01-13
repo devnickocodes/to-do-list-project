@@ -19,7 +19,7 @@ The objective of this project is to:
 - Allow the user to see the timestamps for their task was created.
 - Allow the user to exit the app.
 
-### User goals:
+### User Goals:
 
 - Clearly see the intro and author of the app.
 - Add a task to a Google Spreadsheet.
