@@ -263,4 +263,4 @@ Heroku is used for the deployment of the project, here are the steps after you c
 
 - Jubril Akolade - My Code Institute Mentor.
 - The Code Institute Tutor Support - For their awesome and quick technical help.
-- Thank you to everyone who took the time to look over the app and give feedback.
+- Thank you to everyone who took the time to use the app and give feedback.
