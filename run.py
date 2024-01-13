@@ -59,6 +59,7 @@ def add_task(worksheet):
     while True:
         task = input(Fore.YELLOW + Style.BRIGHT
                      + "Enter the task:\n" + Style.RESET_ALL)
+
         # Check if the input is non-empty after removing whitespaces
         if task.strip():
             break
