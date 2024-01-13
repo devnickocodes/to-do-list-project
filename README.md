@@ -251,7 +251,7 @@ Heroku is used for the deployment of the project, here are the steps after you c
 
 ### Acknowledgements
 
-- I would like to acknowledge and thank the following people.
+    - I would like to acknowledge and thank the following people.
 
 - Jubril Akolade - My Code Institute Mentor.
 - The Code Institute Tutor Support - For their awesome and quick technical help.
