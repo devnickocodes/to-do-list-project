@@ -35,3 +35,4 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 | Menu Option 5 (Mark Task As Not Done) chosen | The user chooses a task number that does not match one of the tasks | Display invalid task number and user is navigated to the menu | PASS |
 | Menu Option 5 (Mark Task As Not Done) chosen | The user inputs a letter | Display an error message and user is navigated to the menu | PASS |
 | Menu Option 5 (Mark Task As Not Done) chosen | The user inputs an empty input | Display an error message and user is navigated to the menu | PASS |
+| Menu          | Option 6 (Quit) chosen | display goodbye messages and quit the app | PASS |
