@@ -27,6 +27,7 @@ The objective of this project is to:
 - Remove any task I want.
 - Mark any task as Done and update the status of the task in the Google Spreadsheet.
 - Mark any task as Not Done and update the status of the task in the Google Spreadsheet.
+- See the status of my task
 - See when the task was created.
 - Quit the app.
 
