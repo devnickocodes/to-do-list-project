@@ -12,3 +12,12 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 |   Feature     |   Action                      |   Expected Result            |     PASS/FAIL     |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Program Start | N/A | Intro and Author texts shown, menu is displayed and user is prompted to choose one of the options | PASS |
+| Menu          | Option 1 (Add Task) chosen | User is prompted to type in a task to be added to the list | PASS |
+| Menu Option 1 (Add Task) | Types in a task to be added to the list | Task added to the list | PASS |
+| Menu Option 1 (Add Task) | Tried to add an empty task | Error message displayed and user navigated to the menu | PASS |
+
+
+
+
+
+
