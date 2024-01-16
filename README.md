@@ -5,13 +5,23 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
 
 ## Contents
 
-- [Introduction](#introduction)
-- [Project](#project)
-  - [User Goals](#user-goals)
-  - [Creator Goals](#creator-goals)
-- [Pre development](#pre-development)
-- [Development](#development)
-- [Invalid Input](#invalid-input)
+- [The To-Do List App](#the-to-do-list-app)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Project](#project)
+    - [User Goals:](#user-goals)
+    - [Creator Goals:](#creator-goals)
+  - [Pre development](#pre-development)
+  - [Development](#development)
+  - [Invalid Input](#invalid-input)
+  - [Features](#features)
+    - [Add Task](#add-task)
+    - [View Tasks](#view-tasks)
+    - [Remove Task](#remove-task)
+    - [Mark Task As Done](#mark-task-as-done)
+    - [Mark Task As Not Done](#mark-task-as-not-done)
+    - [Quit](#quit)
+
 
 ## Introduction
 
