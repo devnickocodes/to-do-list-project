@@ -198,6 +198,8 @@ Find the technologies used for this project below:
 
 ## Testing 
 
+Find the testing and validation [here](https://github.com/devnickocodes/to-do-list-project/blob/main/TESTING.md)
+
 ## Bugs
 
 Since I installed and imported the PyFiglet library after I had already started working on the project when I deployed the app and I was met with an error saying that the module was not found. After that I realised that I had forgotten to install the necessary dependancies in the requirements file, and after I did that the app was running with no issues.
