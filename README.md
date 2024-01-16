@@ -158,6 +158,8 @@ This feature displays goodbye messages and stops the running of the app.
 
 ![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png)
 
+
+
 ## Features Left To Implement
 
 ### Authentication
@@ -209,7 +211,7 @@ Find the technologies used for this project below:
 - [google-auth](https://google-auth.readthedocs.io/en/master/#google-auth) was used for secure authentication with Google APIs
 
 
-## Testing 
+## Testing and Validation
 
 Find the testing and validation [here](https://github.com/devnickocodes/to-do-list-project/blob/main/TESTING.md)
 
