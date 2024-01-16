@@ -6,6 +6,9 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
 ## Contents
 
 - [Introduction](#introduction)
+- [Project](#project)
+  - [User Goals](#user-goals)
+  - [Creator Goals](#creator-goals)
 
 ## Introduction
 
