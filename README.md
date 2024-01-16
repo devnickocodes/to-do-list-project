@@ -9,6 +9,8 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
 - [Project](#project)
   - [User Goals](#user-goals)
   - [Creator Goals](#creator-goals)
+- [Pre development](#pre-development)
+- [Development](#development)
 
 ## Introduction
 
@@ -44,13 +46,13 @@ The objective of this project is to:
 - Create a program that is flexible and allows changes and additional options to be added if needed.
 - Create a program that is easy to use, and straightforward to navigate around.
 
-### Pre development
+## Pre development
 
 I created a flowchart to use as guidance and break the code into smaller steps, this way I had a clear idea of what I needed to implement. The flowchart shows the logic that the app uses depending on which option is given. The inputs that it is asking from the user as well as the operations it will perform based on those inputs, as well as how the program handles a task number that doesn’t exist, or if a letter is given instead of an integer number.
 
 ![To-Do List App Flowchart](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/to-do-list-flowchart.png)
 
-### Development
+## Development
 
 After writing some of the code I was using the os module and while it was working perfectly fine in the terminal for creating .txt files that would store the tasks. Upon deployment, nothing was happening. After getting in touch with tutor support they suggested that I implement Google Spreadsheet as a form of a database. I decided I would take this approach and began creating the project from scratch. There was ongoing testing throughout the whole creation of the project using `print` functions and checking truthy/falsy values with the `bool()` function. First, the code for retrieving and accessing Google Spreadsheet was written and then each function was written as needed. Upon further testing additional features were added that would deal with if the user provides a number that is outside the current range of the tasks list, try/except blocks were added that would take care of other errors for example if a user inputs a letter instead of an integer number. After the second meeting with my tutor, he suggested that I look into OOP, so I decided to include a class in the project that handles the authentication of the Google Spreadsheet, with another reason being that there are no variables in the global scope.
 
