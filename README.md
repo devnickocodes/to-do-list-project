@@ -24,6 +24,19 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
   - [Features Left To Implement](#features-left-to-implement)
     - [Authentication](#authentication)
     - [Download Tasks List](#download-tasks-list)
+  - [Technologies Used](#technologies-used)
+  - [Imported Libraries](#imported-libraries)
+  - [Testing](#testing)
+  - [Bugs](#bugs)
+  - [Deployment](#deployment)
+    - [Local Deployment](#local-deployment)
+      - [How to Fork](#how-to-fork)
+      - [How to Clone](#how-to-clone)
+    - [Heroku](#heroku)
+  - [Credits](#credits)
+   - [Code](#code)
+   - [Design](#design)
+   - [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -222,7 +235,7 @@ You can make a local copy of The Elements Game project by writing the following 
 
 - `git clone https://github.com/devnickocodes/to-do-list-project.git` 
 
-#### Heroku 
+### Heroku 
 
 Heroku is used for the deployment of the project, here are the steps after you create your account:
 
