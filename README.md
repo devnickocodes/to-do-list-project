@@ -3,6 +3,10 @@
 
 You can find the deployed project live link [HERE](https://to-do-app-project-d0d8633fbefc.herokuapp.com/)
 
+## Contents
+
+- [Introduction](#introduction)
+
 ## Introduction
 
 The To-Do List App provides the user with an easy way to keep track of their tasks. The app provides the user with all the necessary options that are needed to manage their tasks. Including creating a task, viewing their tasks, removing a task, and more. The user can do everything from the terminal. The app is deployed on Heroku using Code Institute's mock terminal template. If a user tries to remove or mark a task as done that doesn’t exist they will be shown the menu again and they could reselect the option or choose a different one. The user is provided with the option of marking a task as undone if they have made a mistake or changed their mind.
@@ -252,7 +256,6 @@ Heroku is used for the deployment of the project, here are the steps after you c
 ### Acknowledgements
 
   - I would like to acknowledge and thank the following people.
-
 - Jubril Akolade - My Code Institute Mentor.
 - The Code Institute Tutor Support - For their awesome and quick technical help.
 - Thank you to everyone who took the time to use the app and give feedback.
