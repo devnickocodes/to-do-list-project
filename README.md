@@ -21,9 +21,9 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
     - [Mark Task As Done](#mark-task-as-done)
     - [Mark Task As Not Done](#mark-task-as-not-done)
     - [Quit](#quit)
-- [Features Left To Implement](#features-left-to-implement)
-  - [Authentication](#authentication)
-  - [Download Tasks List](#download-tasks-list)
+  - [Features Left To Implement](#features-left-to-implement)
+    - [Authentication](#authentication)
+    - [Download Tasks List](#download-tasks-list)
 
 ## Introduction
 
