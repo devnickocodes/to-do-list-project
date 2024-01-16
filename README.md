@@ -153,7 +153,7 @@ This feature displays goodbye messages and stops the running of the app.
 
 ### Download Tasks List
 
-- add an option that allows the user to download the spreadsheet with their tasks on their computer.
+- Add an option that allows the user to download the spreadsheet with their tasks on their computer.
 
 ## Technologies Used
 
