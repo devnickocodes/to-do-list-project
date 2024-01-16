@@ -11,6 +11,7 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
   - [Creator Goals](#creator-goals)
 - [Pre development](#pre-development)
 - [Development](#development)
+- [Invalid Input](#invalid-input)
 
 ## Introduction
 
@@ -56,7 +57,7 @@ I created a flowchart to use as guidance and break the code into smaller steps, 
 
 After writing some of the code I was using the os module and while it was working perfectly fine in the terminal for creating .txt files that would store the tasks. Upon deployment, nothing was happening. After getting in touch with tutor support they suggested that I implement Google Spreadsheet as a form of a database. I decided I would take this approach and began creating the project from scratch. There was ongoing testing throughout the whole creation of the project using `print` functions and checking truthy/falsy values with the `bool()` function. First, the code for retrieving and accessing Google Spreadsheet was written and then each function was written as needed. Upon further testing additional features were added that would deal with if the user provides a number that is outside the current range of the tasks list, try/except blocks were added that would take care of other errors for example if a user inputs a letter instead of an integer number. After the second meeting with my tutor, he suggested that I look into OOP, so I decided to include a class in the project that handles the authentication of the Google Spreadsheet, with another reason being that there are no variables in the global scope.
 
-#### Invalid Input
+## Invalid Input
 
 - Add Task (Option - 1)
 
