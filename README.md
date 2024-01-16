@@ -21,6 +21,7 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
     - [Mark Task As Done](#mark-task-as-done)
     - [Mark Task As Not Done](#mark-task-as-not-done)
     - [Quit](#quit)
+  - [Google Sheets](#google-sheets)
   - [Features Left To Implement](#features-left-to-implement)
     - [Authentication](#authentication)
     - [Download Tasks List](#download-tasks-list)
@@ -158,7 +159,11 @@ This feature displays goodbye messages and stops the running of the app.
 
 ![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png)
 
+## Google Sheets
 
+The task list is stored on Google sheets and from there the app has access to modify the list. The tasks are added to the first three cells. The first being the task, the second the status of 'Done' or 'Not Done' and the third one is the timestamp.
+
+![Google Sheets](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/spreadsheets-task-list.png)
 
 ## Features Left To Implement
 
