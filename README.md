@@ -115,6 +115,10 @@ If the user tries to enter a letter, they will be show an error message, and the
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-mark-task-as-done-option.png)
 
+If the user tries to mark a task as done by entering an empty input (for example to just hit 'Enter' on the keyboard), they will be shown an error message, and they will be redirected to the menu.
+
+![Blank Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/blank-input-testing-option4.png)
+
 - Mark Task As Not Done (Option - 5)
 
 If the user tries to mark a non-existent task as not done, they will be reminded that they need to choose a valid task number and they will be redirected to the menu.
@@ -124,6 +128,10 @@ If the user tries to mark a non-existent task as not done, they will be reminded
 If the user tries to enter a letter, they will be show an error message which is part of the try/except block and they will be redirected to the menu.
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-mark-task-as-not-done-option.png)
+
+If the user tries to mark a task as not done by entering an empty input (for example to just hit 'Enter' on the keyboard), they will be shown an error message, and they will be redirected to the menu.
+
+![Blank Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/blank-input-testing-option5.png)
 
 ## Features 
 
