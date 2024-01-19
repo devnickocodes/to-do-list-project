@@ -27,7 +27,7 @@ You can find the deployed project live link [HERE](https://to-do-app-project-d0d
     - [Download Tasks List](#download-tasks-list)
   - [Technologies Used](#technologies-used)
   - [Imported Libraries](#imported-libraries)
-  - [Testing](#testing)
+  - [Testing and VAlidation](#testing-and-validation)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
     - [Local Deployment](#local-deployment)
