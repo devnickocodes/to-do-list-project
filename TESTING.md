@@ -52,3 +52,12 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) to validate the cod
 |  Quit the app. | PASS | ![Quit (Option - 6)](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/quit-option.png) |
 
 
+## Cross-Browser Testing
+
+After the deployment of the app through Heroku, I have tested the app on the below browsers, and the app loaded and run perfectly fine without any issues.
+
+| Browsers | Images |
+| ------- | ----- |
+| Chrome | ![Chrome](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/chrome-browser-testing.png) |
+| Edge | ![Edge](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/edge-browser-testing.png) |
+| Firefox | ![Firefox](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/firefox-browser-testing.png) |
