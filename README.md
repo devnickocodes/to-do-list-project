@@ -97,11 +97,13 @@ If the user tries to remove a non-existent task, they will be reminded that they
 
 ![Non-existent Task Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-non-existant-task-remove-task-option.png)
 
-If the user tries to enter a letter, they will be show an error message which is part of the try/except block and they will be redirected to the menu.
+If the user tries to enter a letter, they will be show an error message, and they will be redirected to the menu.
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-remove-task-option.png)
 
+If the user tries to remove a task by entering an empty input (for example to just hit 'Enter' on the keyboard), they will be shown an error message, and they will be redirected to the menu.
 
+![Blank Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/blank-input-testing-option3.png)
 
 - Mark Task As Done (Option - 4)
 
@@ -109,7 +111,7 @@ If the user tries to mark a non-existent task as done, they will be reminded tha
 
 ![Input for a non-existent task to mark as done](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-non-existant-task-mark-task-as-done-option.png)
 
-If the user tries to enter a letter, they will be show an error message which is part of the try/except block and they will be redirected to the menu.
+If the user tries to enter a letter, they will be show an error message, and they will be redirected to the menu.
 
 ![Letter Input](https://github.com/devnickocodes/to-do-list-project/blob/main/documentation/enter-a-letter-mark-task-as-done-option.png)
 
